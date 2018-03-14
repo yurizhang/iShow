@@ -1,0 +1,52 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import {default as Component} from '../Common/plugs/index.js'; //提供style, classname方法
+import '../Common/css/Button.css';
+
+
+export default class Button extends Component {
+  onClick(e) {
+    if (this.props.onClick) {
+      this.props.onClick(e);
+    }
+  }
+
+  render() {
+    return (
+      <button
+      style={this.style()}
+      className={this.className('ishow-button', this.props.type && `ishow-button--${this.props.type}`, this.props.size && `ishow-button--${this.props.size}`, {
+          'is-disabled': this.props.disabled,
+          'is-loading': this.props.loading,
+          'is-plain': this.props.plain
+      })}
+      disabled={this.props.disabled}
+      type={this.props.nativeType}
+      onClick={this.onClick.bind(this)}>
+        { this.props.loading && <i className="ishow-icon-loading" /> }
+        { this.props.icon && !this.props.loading && <i className={`ishow-icon-${this.props.icon}`} /> }
+
+        <span>{this.props.children}</span>
+      </button>
+    )
+  }
+}
+
+Button.propTypes = {
+  onClick: PropTypes.func,
+  type: PropTypes.string,
+  size: PropTypes.string,
+  icon: PropTypes.string,
+  nativeType: PropTypes.string,
+  loading: PropTypes.bool,
+  disabled: PropTypes.bool,
+  plain: PropTypes.bool
+}
+
+Button.defaultProps = {
+  type: 'default',
+  nativeType: 'button',
+  loading: false,
+  disabled: false,
+  plain: false
+};

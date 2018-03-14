@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.ishow-steps {
+    font-size: 0
+}
+
+.ishow-steps>:last-child .ishow-step__line {
+    display: none
+}
+
+.ishow-steps.is-horizontal {
+    white-space: nowrap
+}
+
+.ishow-steps.is-horizontal.is-center {
+    text-align: center
+}

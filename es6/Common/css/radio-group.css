@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.ishow-radio-group {
+  display: inline-block;
+  font-size: 0;
+  line-height: 1;
+  vertical-align: middle
+}
+
+.ishow-radio-group .ishow-radio {
+  font-size: 14px
+}

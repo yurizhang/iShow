@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.ishow-breadcrumb {
+    font-size: 13px;
+    line-height: 1
+}
+
+.ishow-breadcrumb:after,
+.ishow-breadcrumb:before {
+    display: table;
+    content: ""
+}
+
+.ishow-breadcrumb:after {
+    clear: both
+}
+
+.ishow-breadcrumb__separator {
+    margin: 0 8px;
+    color: #bfcbd9
+}
+
+.ishow-breadcrumb__item {
+    float: left
+}
+
+.ishow-breadcrumb__item:last-child .ishow-breadcrumb__item__inner,
+.ishow-breadcrumb__item:last-child .ishow-breadcrumb__item__inner a,
+.ishow-breadcrumb__item:last-child .ishow-breadcrumb__item__inner a:hover,
+.ishow-breadcrumb__item:last-child .ishow-breadcrumb__item__inner:hover {
+    color: #97a8be;
+    cursor: text
+}
+
+.ishow-breadcrumb__item:last-child .ishow-breadcrumb__separator {
+    display: none
+}
+
+.ishow-breadcrumb__item__inner,
+.ishow-breadcrumb__item__inner a {
+    transition: color .15s linear;
+    color: #48576a
+}
+
+.ishow-breadcrumb__item__inner a:hover,
+.ishow-breadcrumb__item__inner:hover {
+    color: #20a0ff;
+    cursor: pointer
+}
