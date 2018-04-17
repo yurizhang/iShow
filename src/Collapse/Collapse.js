@@ -56,13 +56,13 @@ export default class Collapse extends Component {
   }
 }
 
-Collapse.defaultProps = {
-  value: [],
-  onChange() {}
-};
-
 Collapse.propTypes = {
   accordion: PropTypes.bool,
   value: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   onChange: PropTypes.func
+};
+
+Collapse.defaultProps = {
+  value: [],
+  onChange() {}
 };

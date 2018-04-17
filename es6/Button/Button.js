@@ -10,6 +10,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { default as Component } from '../Common/plugs/index.js'; //提供style, classname方法
 import '../Common/css/Button.css';
+import '../Common/css/Icon.css';
 
 var Button = function (_Component) {
   _inherits(Button, _Component);

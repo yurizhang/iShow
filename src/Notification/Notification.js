@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {default as Component,View} from '../Common/plugs/index.js'; //提供style, classname方法
 import Transition from '../Message/transition';
 import '../Common/css/Notification.css';
+import '../Common/css/Icon.css';
 const typeMap = {
   success: 'circle-check',
   info: 'information',
@@ -80,9 +81,12 @@ export default class Notification extends Component {
             onMouseLeave={this.startTimer.bind(this)}
             onClick={this.onClick.bind(this)}
           >
-            {
-              this.props.type && <i className={this.classNames('ishow-notification__icon', this.typeClass(), this.props.iconClass)} />
-            }
+          {this.props.iconClass ? <i className={this.classNames('ishow-notification__icon', this.props.iconClass)} />
+          : this.props.type?<i className={this.classNames('ishow-notification__icon', this.typeClass())} />:''}
+            {/* {
+            this.props.type && <i className={this.classNames('ishow-notification__icon', this.typeClass(), this.props.iconClass)} />
+            } */}
+
             <div className={this.classNames('ishow-notification__group', {
               'is-with-icon': this.typeClass() || this.props.iconClass
             })}>

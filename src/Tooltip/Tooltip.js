@@ -8,17 +8,6 @@ import '../Common/css/Popover.css';
 
 export default class Tooltip extends Component {
 
-
-  static defaultProps = {
-    effect: "dark",
-    placement: "bottom",
-    disabled: false,
-    transition: "fade-in-linear",
-    visibleArrow: true,
-    openDelay: 0,
-    manual: false
-  }
-
   constructor(props) {
     super(props);
 
@@ -112,3 +101,13 @@ Tooltip.propTypes = {
   // 手动控制状态的展示
   visible: PropTypes.bool
 };
+
+Tooltip.defaultProps = {
+  effect: "dark",
+  placement: "bottom",
+  disabled: false,
+  transition: "fade-in-linear",
+  visibleArrow: true,
+  openDelay: 0,
+  manual: false
+}

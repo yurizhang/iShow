@@ -66,7 +66,7 @@ var Sizes = function (_Component) {
             return React.createElement(Select.Option, {
               key: idx,
               value: item,
-              label: item + ' ' + locale.t('el.pagination.pagesize')
+              label: item + ' ' + locale.t('ishow.pagination.pagesize')
             });
           })
         )
@@ -81,7 +81,7 @@ var Total = function Total(props) {
   return typeof props.total === 'number' ? React.createElement(
     'span',
     { className: 'ishow-pagination__total' },
-    locale.t('el.pagination.total', { total: props.total })
+    locale.t('ishow.pagination.total', { total: props.total })
   ) : React.createElement('span', null);
 };
 
@@ -113,7 +113,7 @@ var Jumper = function (_Component2) {
       return React.createElement(
         'span',
         { className: 'ishow-pagination__jump' },
-        locale.t('el.pagination.goto'),
+        locale.t('ishow.pagination.goto'),
         React.createElement('input', {
           className: 'ishow-pagination__editor',
           type: 'number',
@@ -129,7 +129,7 @@ var Jumper = function (_Component2) {
           onFocus: this.handleFocus.bind(this),
           style: { width: '30px' }
         }),
-        locale.t('el.pagination.pageClassifier')
+        locale.t('ishow.pagination.pageClassifier')
       );
     }
   }]);

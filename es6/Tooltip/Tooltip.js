@@ -127,15 +127,6 @@ var Tooltip = function (_Component) {
   return Tooltip;
 }(Component);
 
-Tooltip.defaultProps = {
-  effect: "dark",
-  placement: "bottom",
-  disabled: false,
-  transition: "fade-in-linear",
-  visibleArrow: true,
-  openDelay: 0,
-  manual: false
-};
 export default Tooltip;
 
 
@@ -158,4 +149,14 @@ Tooltip.propTypes = {
   manual: PropTypes.bool,
   // 手动控制状态的展示
   visible: PropTypes.bool
+};
+
+Tooltip.defaultProps = {
+  effect: "dark",
+  placement: "bottom",
+  disabled: false,
+  transition: "fade-in-linear",
+  visibleArrow: true,
+  openDelay: 0,
+  manual: false
 };

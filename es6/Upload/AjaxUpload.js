@@ -168,9 +168,6 @@ var AjaxUpload = function (_Component) {
   return AjaxUpload;
 }(Component);
 
-AjaxUpload.defaultProps = {
-  name: 'file'
-};
 export default AjaxUpload;
 
 
@@ -191,4 +188,8 @@ AjaxUpload.propTypes = {
   autoUpload: PropTypes.bool,
   listType: PropTypes.string,
   fileList: PropTypes.array
+};
+
+AjaxUpload.defaultProps = {
+  name: 'file'
 };

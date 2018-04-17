@@ -5,9 +5,6 @@ import PropTypes from 'prop-types';
 import {default as Component} from '../Common/plugs/index.js'; //提供style, classname方法
 
 export default class Cover extends Component {
-  static defaultProps = {
-    onFile: Function
-  };
 
   constructor(props) {
     super(props);
@@ -52,4 +49,8 @@ export default class Cover extends Component {
 
 Cover.propTypes = {
   onFile: PropTypes.func
+};
+
+Cover.defaultProps = {
+  onFile: Function
 };

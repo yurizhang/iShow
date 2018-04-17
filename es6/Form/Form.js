@@ -10,14 +10,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { default as Component } from '../Common/plugs/index.js'; //提供style, classname方法
 import '../Common/css/Form.css';
-// type State = {
-//   fields: Array<Component>,
-// };
 
 var Form = function (_Component) {
   _inherits(Form, _Component);
-
-  //state: State;
 
   function Form(props) {
     _classCallCheck(this, Form);

@@ -88,13 +88,13 @@ var Collapse = function (_Component) {
 export default Collapse;
 
 
-Collapse.defaultProps = {
-  value: [],
-  onChange: function onChange() {}
-};
-
 Collapse.propTypes = {
   accordion: PropTypes.bool,
   value: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
   onChange: PropTypes.func
+};
+
+Collapse.defaultProps = {
+  value: [],
+  onChange: function onChange() {}
 };

@@ -1,19 +1,11 @@
-/* @flow */
-
 import React from 'react';
 import AsyncValidator from 'async-validator';
 import PropTypes from 'prop-types';
 import {default as Component} from '../Common/plugs/index.js'; //提供style, classname方法
 import Transition from '../Message/transition';
 import '../Common/css/Form.css';
-// type State = {
-//   error: string,
-//   valid: boolean,
-//   validating: boolean
-// };
 
 export default class FormItem extends Component {
-  //state: State;
 
   constructor(props) {
     super(props);

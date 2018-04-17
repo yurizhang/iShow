@@ -6,10 +6,6 @@ import Cover from './Cover';
 
 export default class IframeUpload extends Component {
 
-  static defaultProps = {
-    name: 'file'
-  };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -147,4 +143,8 @@ IframeUpload.propTypes = {
   onSuccess: PropTypes.func,
   onError: PropTypes.func,
   listType: PropTypes.string
+};
+
+IframeUpload.defaultProps = {
+  name: 'file'
 };

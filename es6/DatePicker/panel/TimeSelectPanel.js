@@ -9,9 +9,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import { scrollIntoView } from '../Common/utils/dom';
+import { scrollIntoView } from '../../Common/utils/dom';
 
-import { Scrollbar } from '../../Common/Scrollbar';
+import { Scrollbar } from '../../Scrollbar';
 import { PopperBase } from './PopperBase';
 import '../../Common/css/Date-picker.css';
 

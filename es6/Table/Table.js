@@ -109,7 +109,7 @@ var Table = function (_Component) {
           'div',
           { className: 'ishow-table__header-wrapper', ref: this.bindRef('headerWrapper') },
           React.createElement(TableHeader, Object.assign({}, this.props, {
-            style: { width: layout.bodyWidth || '' }
+            style: { width: '100%' || '', height: '100%' }
           }))
         ),
         React.createElement(
@@ -121,7 +121,7 @@ var Table = function (_Component) {
             onScroll: this.syncScroll
           },
           React.createElement(TableBody, Object.assign({}, this.props, {
-            style: { width: this.bodyWidth }
+            style: { width: '100%', height: '100%' }
           })),
           (!props.data || !props.data.length) && React.createElement(
             'div',
@@ -132,7 +132,7 @@ var Table = function (_Component) {
             React.createElement(
               'span',
               { className: 'ishow-table__empty-text' },
-              local.t('ishow.table.emptyText')
+              props.emptyText ? props.emptyText : local.t('ishow.table.emptyText')
             )
           )
         ),
@@ -162,7 +162,7 @@ var Table = function (_Component) {
             React.createElement(TableHeader, Object.assign({
               fixed: 'left'
             }, this.props, {
-              style: { width: layout.fixedWidth || '' }
+              style: { width: layout.fixedWidth || '', height: '100%' }
             }))
           ),
           React.createElement(
@@ -177,7 +177,7 @@ var Table = function (_Component) {
             React.createElement(TableBody, Object.assign({
               fixed: 'left'
             }, this.props, {
-              style: { width: layout.fixedWidth || '' }
+              style: { width: layout.fixedWidth || '', height: '100%' }
             }))
           ),
           props.showSummary && React.createElement(
@@ -221,7 +221,7 @@ var Table = function (_Component) {
             React.createElement(TableBody, Object.assign({
               fixed: 'right'
             }, this.props, {
-              style: { width: layout.rightFixedWidth || '' }
+              style: { width: layout.rightFixedWidth || '', height: '100%' }
             }))
           ),
           props.showSummary && React.createElement(

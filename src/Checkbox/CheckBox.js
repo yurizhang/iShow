@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {default as Component} from '../Common/plugs/index.js'; //提供style, classname方法
 import '../Common/css/checkbox.css';
 export default class Checkbox extends Component {
+  static elementType = 'Checkbox';
 
   constructor(props) {
     super(props);

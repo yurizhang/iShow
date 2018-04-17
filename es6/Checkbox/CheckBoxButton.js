@@ -56,4 +56,5 @@ var CheckboxButton = function (_CheckBox) {
   return CheckboxButton;
 }(CheckBox);
 
+CheckboxButton.elementType = 'CheckboxButton';
 export default CheckboxButton;

@@ -264,21 +264,6 @@ var Upload = function (_Component) {
   return Upload;
 }(Component);
 
-Upload.defaultProps = {
-  headers: {},
-  name: 'file',
-  type: 'select',
-  listType: 'text',
-  fileList: [],
-  showFileList: true,
-  autoUpload: true,
-  onRemove: function onRemove() {},
-  onPreview: function onPreview() {},
-  onProgress: function onProgress() {},
-  onSuccess: function onSuccess() {},
-  onError: function onError() {},
-  onChange: function onChange() {}
-};
 export default Upload;
 
 
@@ -310,4 +295,20 @@ Upload.propTypes = {
   onError: PropTypes.func,
   onChange: PropTypes.func,
   className: PropTypes.string
+};
+
+Upload.defaultProps = {
+  headers: {},
+  name: 'file',
+  type: 'select',
+  listType: 'text',
+  fileList: [],
+  showFileList: true,
+  autoUpload: true,
+  onRemove: function onRemove() {},
+  onPreview: function onPreview() {},
+  onProgress: function onProgress() {},
+  onSuccess: function onSuccess() {},
+  onError: function onError() {},
+  onChange: function onChange() {}
 };

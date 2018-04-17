@@ -10,22 +10,6 @@ import '../Common/css/Upload.css'
 export default class Upload extends Component {
   state;
 
-  static defaultProps = {
-    headers: {},
-    name: 'file',
-    type: 'select',
-    listType: 'text',
-    fileList: [],
-    showFileList: true,
-    autoUpload: true,
-    onRemove() {},
-    onPreview() {},
-    onProgress() {},
-    onSuccess() {},
-    onError() {},
-    onChange() {}
-  };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -257,4 +241,20 @@ Upload.propTypes = {
   onError: PropTypes.func,
   onChange: PropTypes.func,
   className: PropTypes.string
+};
+
+Upload.defaultProps = {
+  headers: {},
+  name: 'file',
+  type: 'select',
+  listType: 'text',
+  fileList: [],
+  showFileList: true,
+  autoUpload: true,
+  onRemove() { },
+  onPreview() { },
+  onProgress() { },
+  onSuccess() { },
+  onError() { },
+  onChange() { }
 };

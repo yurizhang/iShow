@@ -137,6 +137,7 @@ var Checkbox = function (_Component) {
   return Checkbox;
 }(Component);
 
+Checkbox.elementType = 'Checkbox';
 export default Checkbox;
 
 

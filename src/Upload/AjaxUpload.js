@@ -5,10 +5,6 @@ import ajax from './ajax';
 import Cover from './Cover';
 import '../Common/css/Upload.css';
 export default class AjaxUpload extends Component {
-  static defaultProps = {
-    name: 'file'
-  };
-
 
   isImage(str) {
     return str.indexOf('image') !== -1;
@@ -141,4 +137,8 @@ AjaxUpload.propTypes = {
   autoUpload: PropTypes.bool,
   listType: PropTypes.string,
   fileList: PropTypes.array
+};
+
+AjaxUpload.defaultProps = {
+  name: 'file'
 };

@@ -14,16 +14,9 @@ import PropTypes from 'prop-types';
 import { default as Component } from '../Common/plugs/index.js'; //提供style, classname方法
 import Transition from '../Message/transition';
 import '../Common/css/Form.css';
-// type State = {
-//   error: string,
-//   valid: boolean,
-//   validating: boolean
-// };
 
 var FormItem = function (_Component) {
   _inherits(FormItem, _Component);
-
-  //state: State;
 
   function FormItem(props) {
     _classCallCheck(this, FormItem);

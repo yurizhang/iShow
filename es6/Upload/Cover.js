@@ -75,12 +75,13 @@ var Cover = function (_Component) {
   return Cover;
 }(Component);
 
-Cover.defaultProps = {
-  onFile: Function
-};
 export default Cover;
 
 
 Cover.propTypes = {
   onFile: PropTypes.func
+};
+
+Cover.defaultProps = {
+  onFile: Function
 };

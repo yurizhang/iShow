@@ -1,5 +1,3 @@
-/* @flow */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import {default as Component} from '../Common/plugs/index.js'; //提供style, classname方法

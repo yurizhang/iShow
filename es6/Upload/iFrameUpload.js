@@ -185,9 +185,6 @@ var IframeUpload = function (_Component) {
   return IframeUpload;
 }(Component);
 
-IframeUpload.defaultProps = {
-  name: 'file'
-};
 export default IframeUpload;
 
 
@@ -201,4 +198,8 @@ IframeUpload.propTypes = {
   onSuccess: PropTypes.func,
   onError: PropTypes.func,
   listType: PropTypes.string
+};
+
+IframeUpload.defaultProps = {
+  name: 'file'
 };

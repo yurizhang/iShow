@@ -126,7 +126,7 @@ export default class Table extends Component {
           <div className="ishow-table__header-wrapper" ref={this.bindRef('headerWrapper')}>
             <TableHeader
               {...this.props}
-              style={{ width: layout.bodyWidth || '' }}
+              style={{ width: '100%' || '' ,height:'100%'}}
             />
           </div>
         )}
@@ -138,14 +138,14 @@ export default class Table extends Component {
         >
           <TableBody
             {...this.props}
-            style={{ width: this.bodyWidth }}
-          />
+            style={{ width: '100%',height:'100%'}}
+        />
           {(!props.data || !props.data.length) && (
             <div
               style={{ width: this.bodyWidth }}
               className="ishow-table__empty-block"
             >
-              <span className="ishow-table__empty-text">{local.t('ishow.table.emptyText')}</span>
+              <span className="ishow-table__empty-text">{props.emptyText ? props.emptyText:local.t('ishow.table.emptyText')}</span>
             </div>
           )}
         </div>
@@ -174,7 +174,7 @@ export default class Table extends Component {
                 <TableHeader
                   fixed="left"
                   {...this.props}
-                  style={{ width: layout.fixedWidth || '' }}
+                  style={{ width: layout.fixedWidth || '' ,height:'100%'}}
                 />
               </div>
             )}
@@ -188,7 +188,7 @@ export default class Table extends Component {
               <TableBody
                 fixed="left"
                 {...this.props}
-                style={{ width: layout.fixedWidth || '' }}
+                style={{ width: layout.fixedWidth || '',height:'100%' }}
               />
             </div>
             {props.showSummary && (
@@ -230,7 +230,7 @@ export default class Table extends Component {
               <TableBody
                 fixed="right"
                 {...this.props}
-                style={{ width: layout.rightFixedWidth || '' }}
+                style={{ width: layout.rightFixedWidth || '' ,height:'100%'}}
               />
             </div>
             {props.showSummary && (
