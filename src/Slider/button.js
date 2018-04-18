@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {default as Component,View} from '../Common/plugs/index.js'; 
+import {default as Component} from '../Common/plugs/index.js'; 
 
 import Tooltip from '../Tooltip';
 

@@ -20,7 +20,7 @@ export default class InputNumber extends Component {
   }
 
   componentWillReceiveProps(props) {
-    if (props.value != this.props.value) {
+    if (props.value !== this.props.value) {
       this.setState({ value: props.value });
     }
   }

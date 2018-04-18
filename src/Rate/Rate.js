@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Common/css/Rate.css';
 import '../Common/css/Icon.css';
-import {default as Component,View} from '../Common/plugs/index.js'; 
+import {default as Component} from '../Common/plugs/index.js'; 
 import PropTypes from 'prop-types';
 
 export default class Rate extends Component {
@@ -58,7 +58,6 @@ export default class Rate extends Component {
 
   setCurrentValue(e, value) {
     const { disabled, allowHalf } = this.props;
-    const { pointerAtLeftHalf, currentValue, hoverIndex } = this.state;
     if (disabled) {
       return;
     }

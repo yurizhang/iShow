@@ -1,12 +1,14 @@
 {
   "name": "ishow-ui",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "private": false,
   "author": "Yuri Zhang",
   "description": "ishow UI: A Component Library for React",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
+    "css-animation": "^1.4.1",
+    "warning": "^3.0.0",
     "async-validator": "^1.8.2",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",

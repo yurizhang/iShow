@@ -17,14 +17,14 @@
     display: inline-block;
     overflow: hidden;
     z-index: 0;
-    background-color:#EBEEF5;/*后修改，可以清晰呈现循环播放内容的效果*/
+    background-color:#DCDFE6;/*后修改，可以清晰呈现循环播放内容的效果*/
     text-align: center;
     line-height: 200px; /*后修改，将滚动卡片数字标签居中*/
 }
 
 .ishow-carousel__item.is-active {
     z-index: 2;
-    background-color:#909399;/*后修改，可以清晰呈现循环播放内容的效果*/
+    background-color:#1D8CE0;/*后修改，可以清晰呈现循环播放内容的效果*/
 }
 
 .ishow-carousel__item--card {

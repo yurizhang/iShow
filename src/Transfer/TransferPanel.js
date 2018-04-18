@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {default as Component,View} from '../Common/plugs/index.js';
-import Input from "../../ishow/Input/index";
-import Checkbox from "../../ishow/Checkbox/index";
+import Input from "../Input/index";
+import Checkbox from "../Checkbox/index";
 import i18n from '../Common/locale/index.js';
 
 export default class TransferPanel extends Component {

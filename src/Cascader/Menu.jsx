@@ -30,7 +30,7 @@ export default class CascaderMenu extends Component {
   }
 
   componentDidUpdate(props, state) {
-    if (state.value != this.state.value || state.visible != this.state.visible) {
+    if (state.value !== this.state.value || state.visible !== this.state.visible) {
       this.setState({ activeValue: this.state.value });
     }
   }

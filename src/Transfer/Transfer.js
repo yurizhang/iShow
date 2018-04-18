@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {default as Component} from '../Common/plugs/index.js';
-import Button from "../../ishow/Button/index";
+import Button from "../Button/index";
 import TransferPanel from './TransferPanel';
 
 import i18n from '../Common/locale/index.js';

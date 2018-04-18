@@ -62,11 +62,11 @@ export default class Slider extends Component {
   }
 
   componentWillUpdate(props, state) {
-    if (props.min != this.props.min || props.max != this.props.max) {
+    if (props.min !== this.props.min || props.max !== this.props.max) {
       this.setValues();
     }
 
-    if (props.value != this.props.value) {
+    if (props.value !== this.props.value) {
       const { oldValue } = this.state;
 
       if (this.state.dragging || Array.isArray(this.props.value) && Array.isArray(props.value) && Array.isArray(oldValue) && this.props.value.every((item, index) => item === oldValue[index])) {
@@ -186,7 +186,7 @@ export default class Slider extends Component {
   }
 
   onFirstValueChange(e) {
-    if (this.state.firstValue != e) {
+    if (this.state.firstValue !== e) {
       this.state.firstValue = e;
       this.forceUpdate();
       this.setValues();
@@ -194,7 +194,7 @@ export default class Slider extends Component {
   }
 
   onSecondValueChange(e) {
-    if (this.state.secondValue != e) {
+    if (this.state.secondValue !== e) {
       this.state.secondValue = e;
       this.forceUpdate();
       this.setValues();

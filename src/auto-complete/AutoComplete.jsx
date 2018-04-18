@@ -38,7 +38,6 @@ class AutoComplete extends Component {
       setTimeout(() => {
         //if(visible && reference && reference.offsetWidth)
         if(reference && reference.offsetWidth){
-          console.log(this.suggestionsNode)
           this.suggestionsNode.onVisibleChange(visible, reference.offsetWidth);
         }
       })

@@ -73,7 +73,7 @@ class Cascader extends Component {
   componentDidUpdate(props, state) {
     const { menuVisible } = this.state;
 
-    if (menuVisible != state.menuVisible) {
+    if (menuVisible !== state.menuVisible) {
       if (menuVisible) {
         this.showMenu();
 

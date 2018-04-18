@@ -50,7 +50,7 @@ export default class Carousel extends Component {
   }
 
   componentDidUpdate(props, state) {
-    if (state.activeIndex != this.state.activeIndex) {
+    if (state.activeIndex !== this.state.activeIndex) {
       this.resetItemPosition(state.activeIndex);
 
       if (this.props.onChange) {
