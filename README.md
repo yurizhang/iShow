@@ -5,7 +5,6 @@ iShow UI - 一个基于React的极简，可配置，可扩展的UI<br>
 使用 ES6 构建，提供完整的独立安装包。<br>
 基于 yarn + webpack + react +babel 的工作流<br>
 
-[Demo](https://yurizhang.github.io/ishow/) <br>
 
 快速上手<br>
 
